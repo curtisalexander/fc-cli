@@ -1,4 +1,4 @@
-# fc_cli
+# fc-cli
 Command line script to query Full Contact's RESTful [Person API](https://www.fullcontact.com/developer/docs/person).  Able to query using
 * email
 * phone
@@ -7,7 +7,7 @@ Command line script to query Full Contact's RESTful [Person API](https://www.ful
 
 ## Usage
 ```
-fc.py [OPTIONS]
+fc-cli.py [OPTIONS]
 
 Options:
   --lookup [email|phone|twitter|facebook] lookup type
@@ -18,9 +18,9 @@ Options:
 
 ## Example
 ```
-fc_cli.py --lookup=email --lookup-value=myaddress@gmail.com --json=results.json
+fc-cli.py --lookup=email --lookup-value=myaddress@gmail.com --json=results.json
 
-fc_cli.py --lookup=phone --lookup-value=7737654321 --json=results.json
+fc-cli.py --lookup=phone --lookup-value=7737654321 --json=results.json
 ```
 
 ## Requirements
