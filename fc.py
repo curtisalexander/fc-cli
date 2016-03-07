@@ -16,7 +16,7 @@ import requests
 
 # even though the cli option is 'lookup-value'
 # it is passed in as lookup_value
-def fc_cli(lookup, lookup_value, json):
+def fc(lookup, lookup_value, json):
     """ Query the Full Contact Person API """
     API_KEY = get_api_key('fc_key')
     URL = 'https://api.fullcontact.com/v2/person.json'
@@ -54,4 +54,4 @@ def get_api_key(api_file):
         return f.read().replace('\n', '')
 
 if __name__ == '__main__':
-    fc_cli()
+    fc()
