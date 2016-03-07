@@ -2,8 +2,6 @@
 
 # standard library
 import os
-import platform
-import re
 
 # third party
 import click
