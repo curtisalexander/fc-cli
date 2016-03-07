@@ -1,4 +1,4 @@
-# fc_cli.py
+# fc_cli
 Command line script to query Full Contact's RESTful [Person API](https://www.fullcontact.com/developer/docs/person).  Able to query using
 * email
 * phone
@@ -18,9 +18,9 @@ Options:
 
 ## Example
 ```
-fc.py --lookup=email --lookup-value=myaddress@gmail.com --json=results.json
+fc_cli.py --lookup=email --lookup-value=myaddress@gmail.com --json=results.json
 
-fc.py --lookup=phone --lookup-value=7737654321 --json=results.json
+fc_cli.py --lookup=phone --lookup-value=7737654321 --json=results.json
 ```
 
 ## Requirements
@@ -36,9 +36,7 @@ pip install click
 ```
 or
 ```
-conda skeleton pypi click
-conda build click
-conda install --use-local click
+conda install click
 ```
 * [requests](http://docs.python-requests.org/en/latest) - HTTP for Humans
 
